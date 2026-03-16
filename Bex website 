@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bex App - Milton Nano Technologies</title>
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#081421;
+color:white;
+overflow-x:hidden;
+}
+
+/* Moving Tech Background */
+
+body::before{
+content:"";
+position:fixed;
+width:200%;
+height:200%;
+background:radial-gradient(circle,#00d4ff22 1px, transparent 1px);
+background-size:40px 40px;
+animation:moveTech 20s linear infinite;
+z-index:-1;
+}
+
+@keyframes moveTech{
+0%{transform:translate(0,0);}
+100%{transform:translate(-200px,-200px);}
+}
+
+/* Header */
+
+header{
+background:#102c44;
+padding:30px;
+text-align:center;
+}
+
+.logo{
+width:220px;
+margin-bottom:10px;
+}
+
+header h1{
+color:#00d4ff;
+margin:5px;
+}
+
+/* Navigation */
+
+nav{
+text-align:center;
+background:#0b1b2b;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+}
+
+.hero h2{
+font-size:34px;
+color:#00d4ff;
+}
+
+/* Download Button */
+
+.download-btn{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#00d4ff;
+color:black;
+font-weight:bold;
+border-radius:30px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.download-btn:hover{
+background:white;
+transform:scale(1.1);
+}
+
+/* Cards */
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#132f48;
+padding:25px;
+border-radius:12px;
+margin-top:20px;
+}
+
+/* Gallery */
+
+.gallery{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+transition:0.5s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* Floating Nano Particles */
+
+.particle{
+position:fixed;
+width:6px;
+height:6px;
+background:#00d4ff;
+border-radius:50%;
+animation:float 8s infinite linear;
+opacity:0.6;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+}
+100%{
+transform:translateY(-10vh);
+}
+}
+
+/* Footer */
+
+footer{
+background:#081421;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating particles -->
+<div class="particle" style="left:10%; animation-delay:0s;"></div>
+<div class="particle" style="left:30%; animation-delay:2s;"></div>
+<div class="particle" style="left:50%; animation-delay:4s;"></div>
+<div class="particle" style="left:70%; animation-delay:1s;"></div>
+<div class="particle" style="left:90%; animation-delay:3s;"></div>
+
+<header>
+
+<img src="bex-logo.jpg" class="logo">
+
+<h1>BEX</h1>
+<p>The Official App by Milton Nano Technologies</p>
+
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Technology</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+
+<h2>Welcome to Bex</h2>
+<p>Innovating the future through nanotechnology.</p>
+
+<a href="#" class="download-btn">Download Bex</a>
+
+</section>
+
+<div class="container">
+
+<div class="card">
+
+<h2>About Milton Nano Technologies</h2>
+
+<p>
+My name is Anome Lime, and I’m here to tell you about a company called Milton,
+a leader in nanotechnology—the science of working with materials at a scale
+so tiny that it’s measured in billionths of a meter.
+</p>
+
+<p>
+Milton focuses on creating smart, powerful, and efficient solutions using
+extremely small particles and devices. Their work helps improve medicine,
+electronics, energy, and even everyday products we use at home and in school.
+</p>
+
+<p>
+<b>Why is Milton important?</b><br>
+Because nanotechnology is the future. It makes devices faster, medicines more
+effective, and technology safer and more reliable. Milton is committed to
+innovation, education, and inspiring young minds—like all of us here—to
+think bigger by thinking smaller.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>Nanotechnology Visuals</h2>
+
+<div class="gallery">
+
+<img src="nano1.jpg">
+
+<img src="nano2.jpg">
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© 2026 Milton Nano Technologies | Bex App
+</footer>
+
+</body>
+</html>
